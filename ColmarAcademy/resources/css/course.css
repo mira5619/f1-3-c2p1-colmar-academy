@@ -1,0 +1,21 @@
+.main-container {
+    height: 100%;
+}
+.banner {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 10%;
+    height: 300px;
+}
+
+h1 {
+    margin-top: 100px;
+}
+
+.details {
+    width: 80%;
+    margin: 50px auto;
+    border: 2px solid gray;
+    padding: 30px;
+}

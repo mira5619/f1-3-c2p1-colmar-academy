@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Cormar Academy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300" rel="stylesheet">
+    <link rel="icon" href="./resources/images/ic-logo.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+    <link rel='stylesheet' href='resources/css/styles.css'/>
+  </head>
+  <body>
+     <nav>
+      <a href="index.html">
+        <div class="logo">
+          <img src="./resources/images/ic-logo.svg" alt="logo" />
+          <span class="toggle black">Colmar</span><span class="toggle">Academy</span>
+        </div>
+      </a>
+      <ul>
+        <li><a href="#"><span class="mobile"><img src="./resources/images/ic-on-campus.svg" alt="on-campus-icon"/></span><span class="switch">On campus</span></a></li>
+        <li><a href="#"><span class="mobile"><img src="./resources/images/ic-online.svg" alt="online-icon"/></span><span class="switch">Online</span></a></li>
+        <li class="switch"><a href="#">For companies</a></li>
+        <li class="active"><a href="#"><span class="mobile"><img src="./resources/images/ic-login.svg" alt="login-icon"/></span><span class="switch active">Sign in</span></a></li>
+      </ul>
+    </nav>
+
+    <header class='sign-in-form-header'>
+      <h1>Sign-in</h1>
+      <p><em>Choose one of our awesome courses!!! Fill out this form.</em></p>
+    </header>
+    <form action='' method='get' class='sign-in-form'>
+    <!-- text input field -->
+      <div class='form-row'>
+        <label for='full-name'>Name</label>
+        <input id='full-name'
+          name='full-name'
+          type='text'
+          placeholder='full name'/>
+      </div>
+    <!-- email input field -->
+      <div class='form-row'>
+        <label for='email'>Email</label>
+        <input id='email'
+         name='email'
+         type='email'
+         placeholder='joe@example.com'/>
+      </div>
+    <!-- radio buttons -->
+      <fieldset class='legacy-form-row'>
+        <legend>Type of Course</legend>
+        <input id='course-type-1'
+         name='course-type'
+         type='radio'
+         value='on-campus' />
+        <label for='course-type-1' class='radio-label'>On campus</label>
+        <input id='course-type-2'
+         name='course-type'
+         type='radio'
+         value='online'
+         checked />
+        <label for='course-type-2' class='radio-label'>Online</label>
+      </fieldset>
+    <!-- select elements (dropdown menus) -->
+      <div class='form-row'>
+        <label for='course'>Course</label>
+        <select id='course' name='course'>
+          <option value='Software engineering'>Software engineering</option>
+          <option value='Computer Art'>Computer Art</option>
+          <option value='Design'>Design</option>
+          <option value='Data'>Data</option>
+          <option value='Business'>Business</option>
+          <option value='Marketing'>Marketing</option>
+        </select>
+      </div>
+    <!-- textarea -->
+      <div class='form-row'>
+        <label for='comment'>Comment</label>
+        <textarea id='comment' name='comment'></textarea>
+        <div class='instructions'>Left a comment in 500 words or less</div>
+      </div>
+    <!-- checkboxes -->
+      <div class='form-row'>
+        <label class='checkbox-label' for='available'>
+          <input id='available'
+           name='available'
+           type='checkbox'
+           value='is-available'/>
+           <span>Lorem ipsum dolor sit amet, consectetur elit.</span>
+        </label>
+      </div>
+    <!-- submit button -->
+      <div class='form-row'>
+        <button>Submit</button>
+      </div>
+
+
+    </form>
+  </body>
+</html>
